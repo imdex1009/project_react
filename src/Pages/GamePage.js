@@ -3,61 +3,27 @@ import React from 'react';
 const GamePage = () => {
   
   return (
-    <div className="gamePage__container">
-      <div className="gamePage__wrapper">import React from 'react';
-
-const GamePage = () => {
-  
-  return (
     <div id="gamePage__container">
       <div id="gamePage__wrapper">
-        <div id="round">
+        <div id="round"> /* 게임 끝나면 round 올려주기 */
         </div>
-        <div id="score">
+        <div id="score"> /* 게임 결과에 따라 점수 변동 */
         </div>
         <section id="boardGame">
-          <div id="participants">
-            <div className="participant"></div>
+          <div id="participants"> 
+            <div className="participant"></div> /* 참가자마다의 컴포넌트 */
           </div>
-          <span id="tagger"></span>
-          <span id="card"></span>
+          <span id="tagger"></span> /* 술래 */
+          <span id="card"></span> /* 단어가 들어가있는 13개의 카드, 선택 가능하도록 */
         </section>
         <div>
-          <input id="hintOrAnswer"
-          ></input>
+          <input id="hintOrAnswer"></input> /* 힌트 또는 답 입력하기 */
         </div>
-        <div id="timeLimit">
-        </div>
-        <div>
-          <textarea id="chattingDisplay"
-          ></textarea>
-          <input id="chattingInput"
-          ></input>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default GamePage
-        <div className="round">
-        </div>
-        <div className="score">
-        </div>
-        <div className="boardGame">
-          
+        <div id="timeLimit"> /* 시간제한 */
         </div>
         <div>
-          <input className="hintOrAnswer"
-          ></input>
-        </div>
-        <div className="timeLimit">
-        </div>
-        <div>
-          <textarea className="chattingDisplay"
-          ></textarea>
-          <input className="chattingInput"
-          ></input>
+          <textarea id="chattingDisplay"></textarea> /* 채팅 내용 보여지는 부분 */
+          <input id="chattingInput"></input> /* 채팅 입력하는 칸 */
         </div>
       </div>
     </div>
