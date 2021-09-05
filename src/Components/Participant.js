@@ -1,7 +1,7 @@
 import React from 'react';
 
 const nickname = dummyParticipant.map(el => {
-  return el.nickname; //dummyParticipant에서 닉네임 가져오기
+  return el.nickname; /*dummyParticipant에서 닉네임 가져오기*/
 })
 
 return (
