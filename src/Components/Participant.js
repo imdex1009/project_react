@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
+import dummyParticipants from "../static/dummyParticipants";
 
-const nickname = dummyParticipant.map(el => {
-  return el.nickname; /*dummyParticipant에서 닉네임 가져오기*/
-})
+const Participant = () => {
+  const block = dummyParticipants.map((el) => {
+    return <div className="participant__username">{el.username}</div>;
+  });
 
-return (
-  <div className="participant">
-    <div className="participant__nickname">{nickname}</div> /*블럭에 닉네임 입력*/
-  </div>
-)
-
+  return <div className="participant">{block}</div>;
+};
 
 // dummyData 만들어줘야 함
+export default Participant;
